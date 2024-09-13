@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "MODE=development vitepress dev docs --port 3000",
+    "serve:alpha": "MODE=alpha vitepress dev docs --port 3000",
+    "serve:prod": "MODE=production vitepress dev docs --port 3000",
+    "build:alpha": "MODE=alpha vitepress build docs",
+    "build:beta": "MODE=development vitepress build docs",
+    "build": "MODE=production vitepress build docs",
+    "preview": "vitepress preview docs --port 3000"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.7",
+    "vite": "^5.4.4",
+    "vitepress": "latest"
+  },
+  "dependencies": {
+    "@lctech-tw/f2e-cat": "^0.2.58",
+    "@lctech-tw/f2e-doooooooog": "^0.0.226",
+    "vue": "^3.4.35"
+  }
+}
