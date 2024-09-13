@@ -4,10 +4,9 @@ import { PanCat, type RunMode } from '@lctech-tw/f2e-cat'
 import { computed, readonly, ref } from 'vue'
 import type { UseCatRes } from './port'
 
-console.log(process.env.VITE_APP_CAT_URL);
 
 const accessToken = ref('')
-const runMode = ref<RunMode>('alpha')
+const runMode = ref<RunMode>(process.env.VITE_APP_ENV_MODE! as RunMode)
 
 const delay = (ms: number): Promise<void> => {
   return new Promise(resolve => {
